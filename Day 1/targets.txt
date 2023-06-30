@@ -1,0 +1,29 @@
+Softwares needed
+--> VS Code
+--> GitHub Desktop
+--> Git
+--> Node js
+
+
+Goals
+  Installing the required Softwares
+  Basic file structure
+    index.html
+    js file
+    css
+  Basics of HTML
+    tags
+  Basics of CSS
+    syntax
+    some basic properties
+  Basics of JavaScript
+    Variables
+    Data types
+      Number
+      String
+      Boolean
+      Undefined
+      Null
+    Functions
+    Arrays
+    Objects
