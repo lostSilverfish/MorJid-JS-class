@@ -1,0 +1,11 @@
+Goals
+  Conditions
+    if,else,&&,||
+  Loops
+    While
+    Do While
+    For
+  Array Looping
+    For of
+  Object Looping
+    For in

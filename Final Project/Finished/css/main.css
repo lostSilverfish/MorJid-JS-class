@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Macondo&family=Noto+Sans:wght@300;400&family=Noto+Serif&display=swap");
+
+:root {
+  --font-title: "Macondo", cursive;
+  --font-body: "Noto Sans", sans-serif;
+  --font-heading: "Noto Serif", serif;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}

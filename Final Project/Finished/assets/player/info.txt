@@ -1,0 +1,1 @@
+All the player sprites will go in this folder

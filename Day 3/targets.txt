@@ -1,0 +1,8 @@
+Goals
+  DOM Manupilation
+    getElementById
+    querySelector
+  Event Listeners
+    Click
+    Keydown
+    KeyUp

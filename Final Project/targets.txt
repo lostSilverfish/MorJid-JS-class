@@ -1,0 +1,38 @@
+Target
+  To make an rpg clickable web game (blackdragon.mobi style)
+  Learn intermediate JavaScript through the project
+
+Goals
+  --> Simple login logic without server
+  --> Linking pages
+  --> Handling clicks
+  --> Player profile page
+  --> Enemy stats page
+  --> Attack logic
+  --> Win & loose logic
+  --> Game over
+  --> Discussing ways to improve the game
+  --> How to scale the game
+
+Game logic
+  --> Player logins in the game
+  --> Player is transported into an uninhabited island of Maldives
+  --> Player is given basic set of equipments for fighting by the quest giver in the Island
+  --> Player needs to fight enemy to gain experience and level up
+  --> Enemies drop item which the player can use to craft new weapons and items
+  --> Player should finish all the quests in the area to get excess to full map of Maldives (this is where
+  we scale the game);
+
+Website concept
+  --> Mobile friendly webpage layout
+  --> A photo of map is shown in the top of the page with enemies, obstacles (using Canvas)
+  --> Links to player profile and other pages are shown below the map
+  --> Arrows are shown in the map to advance to new map (new page or will do in same page)
+  --> When player clicks of player profile page, player is brought to player page
+  --> Player can see profile picture, stats, weapons on that page
+  --> Player can equip and unequip weapons in the player page
+  --> Player can see the inventory in the inventory page
+  --> When Player attacks the enemy, attack page is loaded, where the details of what happened are
+  shown as text
+  --> Player can intract with quest giver and will be taken to quest giver page
+  
