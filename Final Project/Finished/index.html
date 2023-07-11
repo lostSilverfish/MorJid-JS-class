@@ -7,20 +7,29 @@
     <title>MorJid Adventure</title>
   </head>
   <body>
-    <form>
-      <input
-        type="text"
-        id="username"
-        name="username"
-        placeholder="type username"
-      />
-      <input
-        type="password"
-        id="password"
-        name="password"
-        placeholder="type password"
-      />
-      <button id="submitBtn"></button>
-    </form>
+    <div class="container">
+      <h1 class="title">MORJID</h1>
+      <form class="sign-in-form">
+        <label for="username">Username:</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Type username"
+          required
+        />
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Type password"
+          required
+        />
+        <button id="submitBtn">Login</button>
+      </form>
+    </div>
+    <script src="js/fixes.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
