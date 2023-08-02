@@ -2,40 +2,49 @@
 
 const display = document.getElementById("display");
 const numberPad = document.querySelectorAll(".number");
-const clearBtn = document.getElementById("clear");
+const clearBtn = document.querySelector("#clear");
 const equalBtn = document.getElementById("equal");
 
 let displayText = "";
 
-// helper functions
-function addInputs(input) {
-  displayText += input;
+// ---- Helper Functions ----
+// User input handling
+function handleInput(value) {
+  // add value to display text
+  displayText += value;
+  // show on display
   display.textContent = displayText;
 }
 
+// Clear button handling
 function clearDisplay() {
+  // clear the display
   display.textContent = "00";
+
+  // clear the display text
   displayText = "";
 }
 
+// Equal button handling
 function evaluate() {
+  // Calculate the result from displayText
   let result = eval(displayText);
-  displayText = result;
-  display.textContent = displayText;
+
+  // Change Display text content of result
+  display.textContent = result;
 }
 
-// Adding Event Listeners
+// ---- Adding event listeners ----
+// Adding event listeners to the numberpad
 for (let i = 0; i < numberPad.length; i++) {
   numberPad[i].addEventListener("click", function () {
-    const input = numberPad[i].textContent;
-    addInputs(input);
+    let input = numberPad[i].textContent;
+    handleInput(input);
   });
 }
 
-clearBtn.addEventListener("click", function () {
-  clearDisplay();
-});
+// Adding event listener to clear button
+clearBtn.addEventListener("click", clearDisplay);
 
-equalBtn.addEventListener("click", function () {
-  evaluate();
-});
+// Adding event listener to equal button
+equalBtn.addEventListener("click", evaluate);
