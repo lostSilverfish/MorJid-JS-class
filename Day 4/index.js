@@ -18,8 +18,8 @@ const circle = {
   radius: 50,
   color: "#FF9505",
   velocity: {
-    x: 0,
-    y: 0,
+    x: -2,
+    y: 3,
   },
   draw() {
     ctx.fillStyle = circle.color;
@@ -27,12 +27,33 @@ const circle = {
     ctx.arc(circle.x, circle.y, circle.radius, 0, Math.PI * 2, false);
     ctx.fill();
   },
-  move() {},
+  move() {
+    circle.checkBoundry();
+    circle.x += circle.velocity.x;
+    circle.y += circle.velocity.y;
+  },
+  checkBoundry() {
+    if (
+      circle.x < 0 + circle.radius ||
+      circle.x + circle.radius > canvas.width
+    ) {
+      circle.velocity.x *= -1;
+    }
+
+    if (
+      circle.y < 0 + circle.radius ||
+      circle.y + circle.radius > canvas.height
+    ) {
+      circle.velocity.y *= -1;
+    }
+  },
 };
 
 // drawing the circle
 function animate() {
   ctx.reset();
+
+  circle.move();
   circle.draw();
 
   window.requestAnimationFrame(animate);
