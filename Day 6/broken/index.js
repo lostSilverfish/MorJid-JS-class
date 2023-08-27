@@ -6,7 +6,7 @@ const ctx = canvas.getContext("2d");
 canvas.width = 720;
 canvas.height = 500;
 
-const gravity = 1;
+gravity = 1;
 
 const circle = {
   radius: 10,
@@ -67,6 +67,7 @@ const circle = {
 
 function animate() {
   circle.draw();
+  circle.move;
 
   requestAnimationFrame(animate);
 }
