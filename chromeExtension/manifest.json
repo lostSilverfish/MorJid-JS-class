@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "TEST",
+  "version": "1.0.1",
+  "description": "Testing chrome extension",
+
+  "content_scripts": [
+    {
+      "js": [""],
+      "matches": [""]
+    }
+  ]
+}
