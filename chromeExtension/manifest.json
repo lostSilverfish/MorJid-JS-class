@@ -6,8 +6,12 @@
 
   "content_scripts": [
     {
-      "js": [""],
-      "matches": [""]
+      "js": ["script/unit.js"],
+      "matches": ["https://blackdragon.mobi/units/*"]
+    },
+    {
+      "js": ["script/battle.js"],
+      "matches": ["https://blackdragon.mobi/battles/*"]
     }
   ]
 }
