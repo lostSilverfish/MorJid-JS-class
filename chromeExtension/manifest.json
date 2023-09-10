@@ -12,6 +12,10 @@
     {
       "js": ["script/battle.js"],
       "matches": ["https://blackdragon.mobi/battles/*"]
+    },
+    {
+      "js": ["script/map.js"],
+      "matches": ["https://blackdragon.mobi/maps/view/*"]
     }
   ]
 }
