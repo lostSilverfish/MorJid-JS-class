@@ -16,6 +16,10 @@
     {
       "js": ["script/map.js"],
       "matches": ["https://blackdragon.mobi/maps/view/*"]
+    },
+    {
+      "js": ["script/itemGrabber.js"],
+      "matches": ["https://blackdragon.mobi/library/items/*"]
     }
   ]
 }

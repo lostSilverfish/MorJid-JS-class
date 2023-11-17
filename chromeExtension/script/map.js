@@ -1,3 +1,5 @@
+"use strict";
+
 const mobs = document.querySelectorAll(".unit");
 
 const mobsLevels = [];
